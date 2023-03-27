@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Média de gerações</title>
+  </head>
+
+  <body>
+    <script>
+      function pulaLinha() {
+        document.write("<br>");
+      }
+      function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+      }
+      var anoAtual = 2023;
+      var anoDescobrimentoBrasil = 1500;
+      var idadeMediaQuandoTemFilhos = 28;
+      var quantidadeGeracoes =
+        (anoAtual - anoDescobrimentoBrasil) / idadeMediaQuandoTemFilhos;
+      var valorArredondadoDeGeracoes = Math.round(quantidadeGeracoes);
+      mostra(
+        "A quantidade de gerações desde o descobrimento do Brasil é " +
+          valorArredondadoDeGeracoes
+      );
+    </script>
+  </body>
+</html>
